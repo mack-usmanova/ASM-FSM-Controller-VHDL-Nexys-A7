@@ -1,4 +1,4 @@
-# Homework 4 — ASM / FSM Controller in VHDL (Nexys A7)
+#  ASM / FSM Controller in VHDL (Nexys A7)
 
 A 7‑state ASM/FSM controller (`idle`, `s1`…`s6`) written in VHDL and verified in simulation with a Tcl force script.  
 The interesting twist here is timing: **`next_state` is computed on the falling edge**, while **`present_state` only updates on the rising edge** — so the waveforms clearly show them changing at different times.
